@@ -1,0 +1,74 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    margin-top: 180px;
+}
+
+.cardsDiv{
+    display: flex;
+    margin-top: -70px;
+}
+.Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.image1{
+    object-fit: cover;
+    height: 250px;
+    width: 380px;
+}
+.Card h2{
+    font-size: 25px;
+    font-family: "Outfit";
+    font-weight: 600;
+}
+.Card:hover{
+    transition: 0.5s ease-in-out;
+    scale: 1.05;
+}
+.Card h2:hover{
+    transition: 0.5s ease-in-out;
+    scale: 1.06;
+    color: #B97612;
+}
+.Card p{
+    width: 87%;
+    text-wrap: balance;
+    position: relative;
+    font-family: "Outfit";
+    margin-left: 50px;
+    color: rgb(74, 73, 73);
+}
+.btns{
+    background-color: transparent;
+    color: rgb(169, 167, 167);
+    font-weight: bolder;
+    position: relative;
+    font-size: 20px;
+    margin-left: -60%;
+    font-family: "Outfit";
+}
+.btns:hover{
+    background-color: white;
+    color: #B97612;
+    transition: 0.3s ease-in;
+    scale: 1.02;
+}
+@media (max-width: 1000px){
+    .cardsDiv{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .image1{
+        width: 70%;
+        height: 400px;
+    }
+    .btns{
+        display: none;
+    }
+}
